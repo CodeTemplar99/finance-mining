@@ -1,0 +1,194 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="oxyy/images/favicon.png" rel="icon" />
+<title>Login</title>
+<meta name="description" content="Login and Register Form Html Template">
+<meta name="author" content="harnishdesign.net">
+
+<!-- Web Fonts
+========================= -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
+
+<!-- Stylesheet
+========================= -->
+<link rel="stylesheet" type="text/css" href="oxyy/vendor/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="oxyy/vendor/font-awesome/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="oxyy/css/stylesheet.css" />
+<!-- Colors Css -->
+<link id="color-switcher" type="text/css" rel="stylesheet" href="#" />
+<style type="text/css">
+#apDiv1 {
+	position:absolute;
+	left:3px;
+	top:3px;
+	width:143px;
+	height:115px;
+	z-index:1;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+</style>
+<link href="sweetalert-js/sweetalert.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="sweetalert-js/sweetalert.min.js"></script>
+	<script type="text/javascript">
+	function sweetUnpre(msg){
+		swal(
+		  msg
+		);
+	}
+	function sweetError(msg){
+		swal(
+		  'Oops...',
+		  msg,
+		  'error'
+		);
+	}
+	</script>
+     <style>
+	.sweet-alert{
+		background: #062435 !important;
+		color: #fff !important;
+	}
+	.confirm{
+		padding: 10px 30px !important;
+		background: green;
+		border: green solid 1px;
+	}
+	h2{
+		color: #FFFFFF !important;
+	}
+</style>
+</head>
+<body>
+<div data-jarallax='{"speed": 0.4}' data-jarallax-video="https://www.youtube.com/watch?v=hPzfn1yIoRw" id="main-wrapper" class="oxyy-login-register bg-dark">
+
+  <p>&nbsp;</p>
+      <p>&nbsp;</p>
+  <div class="container">
+    <div class="row no-gutters min-vh-100 py-0"> 
+      <!-- Welcome Text
+      ========================= -->
+         <div class="col-lg-4">
+         </div> 
+      <p>
+        <!-- Welcome Text End --> 
+           
+        <!-- Login Form
+      ========================= -->
+      </p>
+    
+      <div class="col-lg-5 shadow-lg d-flex align-items-center rounded-lg rounded-left-0 bg-dark">
+        <div class="container my-auto py-5">
+          <div class="row">
+            <div class="col-11 col-lg-10 mx-auto">
+              <h3 class="text-black text-center mb-4">ACCOUNT LOGIN</h3>
+              <form id="loginForm" class="form-dark" method="post">
+                                  <div class="form-group">
+                  <label class="text-light" for="emailAddress">Email Address</label>
+                  <input type="email" class="form-control" name="email" id="mail" required placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                  <label class="text-light" for="loginPassword">Password</label>
+                  <input type="password" class="form-control" name="pass" id="pass" required placeholder="Enter Password">
+                </div>
+                <div class="row">
+                  <div class="col-sm">
+                   
+                  </div>
+                  <div class="col-sm text-2 text-right"><a class="btn-link" href="reset.html">Forgot Password ?</a></div>
+                </div>
+               
+                
+                <button id="sub" name="sub" style="display: none;" type="submit" class="btn btn-primary btn-round btn-lg btn-block ">SIGN IN</button>
+                                           
+                <button  id="sup" onClick="postStuff()" class="btn btn-primary btn-block my-4" type="button" name="submit">Login</button>
+              </form>
+            
+              <p class="text-2 text-center text-light mb-0">Don't have an account? <a class="btn-link" href="registration.html">Sign Up</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Login Form End --> 
+    </div>
+  </div>
+</div>
+
+<!-- Video Modal
+========================= -->
+
+<!-- Video Modal end --> 
+
+<!-- Styles Switcher --><!-- Styles Switcher End --> 
+
+<!-- Script --> 
+<script src="oxyy/vendor/jquery/jquery.min.js"></script> 
+<script src="oxyy/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Style Switcher --> 
+<script src="oxyy/js/switcher.min.js"></script> 
+<script src="oxyy/js/theme.js"></script>
+  <script src="j/jquery-3.4.1.min.js"></script>
+    <script src="j/popper/popper.min.js"></script>
+    <script src="j/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Page JS Implementing Plugins (Remove the plugin script here if site does not use that feature)-->
+    <script src="j/jquery.appear.js"></script>
+    <script src="j/swiper/swiper.min.js"></script>
+    <script src="j/swiperanimation/SwiperAnimation.min.js"></script>
+    <script src="j/counter/jquery.countTo.js"></script>
+    <script src="j/owl-carousel/owl.carousel.min.js"></script>
+    <script src="j/jarallax/jarallax.min.js"></script>
+    <script src="j/jarallax/jarallax-video.min.js"></script>
+    <script src="j/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script>
+	function postStuff(){
+var hr = new XMLHttpRequest();
+var email = document.getElementById('mail').value;
+var pass = document.getElementById('pass').value;
+
+if(email=="" || pass==""){
+	sweetUnpre("Invalid Email/Password Conbination!");
+	}else{
+var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		if( !emailReg.test(email) ) {
+					sweetUnpre('Please use a valid email address!');
+		}else{
+$('#sub').click();
+
+     }
+	}
+}
+	
+ $(document).ready(function() {
+	 $('#remove').css("cursor","pointer");
+	 $('#sup').css("cursor","pointer");
+	  $('#poster').css("cursor","pointer");
+	 $('#remove').click(function(){
+		 $('#go').hide('slow');
+	 });
+ });
+</script>
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5fa3069e613f1c78e60815a8/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
