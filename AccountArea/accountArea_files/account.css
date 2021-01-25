@@ -6,7 +6,7 @@
 
 .main-account-out .main-account { min-height: 800px; }
 
-.account-title { display: inline-block; *display: inline; *zoom: 1; line-height: 50px; padding: 0 20px; background: #fafcfe; margin-top: 22px; height: 50px; font-family: "ProximaNova", sans-serif; color: #302b47; -webkit-border-radius: 10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -ms-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; box-shadow: 0 -11px 15px rgba(164, 182, 197, 0.19); }
+.account-title { display: inline-block; *display: inline; *zoom: 1; line-height: 50px; padding: 0 20px; background: #fafcfe; margin-top: 22px; height: 50px; font-family: "ProximaNova", sans-serif; color: #1e1b2e; -webkit-border-radius: 10px 10px 0 0; -moz-border-radius: 10px 10px 0 0; -ms-border-radius: 10px 10px 0 0; border-radius: 10px 10px 0 0; box-shadow: 0 -11px 15px rgba(164, 182, 197, 0.19); }
 .account-title b { color: #2587af; }
 
 .balance-list { padding-right: 277px; display: block; width: 100%; position: relative; margin: 30px 0; }
@@ -25,9 +25,9 @@
 .balance-box b { position: relative; font-size: 21px; display: inline-block; *display: inline; *zoom: 1; margin-bottom: 5px; position: relative; color: #146d93; font-family: "ProximaNova", sans-serif; font-weight: 800; height: 25px; line-height: 25px; }
 .balance-box b > small { margin: 3px 0 0 -3px; height: 12px; line-height: 11px; font-weight: 600; background: #fff; font-size: 9px; vertical-align: top; letter-spacing: 0em; padding: 0 4px; text-transform: uppercase; display: inline-block; *display: inline; *zoom: 1; color: #146d93; border: 1px solid #146d93; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; border-radius: 30px; }
 .balance-box span { display: block; text-align: center; color: #427aa1; text-transform: uppercase; font-family: "ProximaNova", sans-serif; font-weight: 600; font-size: 13px; height: 22px; line-height: 22px; margin: 0; background: rgba(255, 255, 255, 0); background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, #eef4f7 50%, rgba(255, 255, 255, 0) 100%); background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #eef4f7 50%, rgba(255, 255, 255, 0) 100%); }
-.balance-box.balance-box-main b { font-size: 25px; color: #302b47; }
-.balance-box.balance-box-main b small { color: #302b47;
-    border: 1px solid #302b47; }
+.balance-box.balance-box-main b { font-size: 25px; color: #1e1b2e; }
+.balance-box.balance-box-main b small { color: #1e1b2e;
+    border: 1px solid #1e1b2e; }
 
 .reflink { position: relative; }
 
